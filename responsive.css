@@ -1,0 +1,250 @@
+
+
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+  /* Common CSS */
+  boady {
+    font-size: 16px;
+  }
+  section {
+    padding: 50px 15px;
+  }
+
+  /* Header */
+  .header-inner {
+    width: 100%;
+  }
+  .logo {
+    float: right;
+    margin-right: 20px;
+  }
+  .menu {
+    float: none;
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    left: -270px;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.1);
+    padding-top: 70px;
+    padding-left: 15px;
+    transition: 0.9s;
+  }
+  .menu a {
+    display: block;
+  }
+  .menu.active {
+    left: 0;
+  }
+  /* Trigger */
+  .trigger {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .trigger:before {
+    content: '\e91c';
+    font-family: xeicon;
+  }
+  .trigger.active:before {
+    content: '\e9af';
+    font-family: xeicon;
+  }
+
+  /* Welcome-section */
+  .welcome {
+    background-color: #f9f9f9;
+  }
+  .slideshow {
+    display: none;
+  }
+  .welcome-heading {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .welcome-heading h1,
+  .welcome-heading h1 span {
+    font-size: 45px;
+  }
+
+  /* Aboutme-section */
+
+.aboutme-inner, 
+.aboutme-inner2 { 
+  width: 100%;
+}
+.aboutme-content > div ,
+.aboutme-content2 > div 
+{
+  float: none;
+  width: 100%;
+  padding-left: 0;
+}
+.aboutme-left img {
+  width: 20%;
+}
+.aboutme-left h1 {
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+.aboutme-left p {
+  font-size: 20px;
+}
+.aboutme-right img {
+  float: none;
+  width: 100%;
+  border-radius: 50px;
+}
+.aboutme-content2 > div {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.experience,
+.activities {
+  font-size: 25px;
+}
+.experience h1,
+.activities h1 {
+  text-align: center;
+}
+.experience ul,
+.activities ul {
+  font-size: 20px;
+}
+.experience ul li ,
+.activities ul li {
+  padding: 10px 0;
+}
+
+/* skills-section */
+.skills {
+  padding-top: 0;
+}
+.skills-inner {
+  width: 100%;
+}
+.skills-headline h1 {
+  font-size: 45px;
+}
+.skills-headline h2 {
+  font-size: 28px;
+}
+.skills-content {
+  padding-left: 15px;
+}
+.skills-content > div {
+  float: none;
+  width: 30%;
+}
+.skiils-desc {
+  font-size: 15px;
+}
+.publishing-item,
+.publishing-item2 {
+  width: 48%;
+}
+  /* publishing */
+.content {
+  width: 100%;
+  height: 400px;
+}
+.rec_span {
+  font-size: 30px;
+}
+h2.cont_title {
+  font-size: 50px;
+}
+.recomm_tab{
+  width:100%;
+  height:10vw;
+}
+.recomm_tab a.btn_tab{
+  width: calc(100% / 5);
+  font-size:12px;
+  line-height: 13vw;
+}
+.recomm_list_wrap {
+margin-bottom: 0;
+}
+
+.recomm_list_wrap img {
+  width: 60px;
+  flex-wrap: wrap;
+}
+.recomm_list.Act{
+}
+
+.recomm_imgtab img,
+.recomm_imghov img{
+  width: 70px;
+  height: 70px;
+  padding-right: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border:1px solid #eee;
+}
+.recomm_name {
+  font-size: 14px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.recomm_list li:hover .buy_view_layer{
+  opacity: 1;
+}
+
+  /* Section : Portfolio */
+
+  .headline-share h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+  }
+
+  /* Section : Portfolio */
+  section.portfolio,
+  section.portfolio1 {
+    align-content: start;
+    height: auto;
+    padding: 20px;
+  }
+  .items,
+  .items1 {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+  /* ############## Footer ############## */
+
+
+
+
+  /* footer */
+footer {
+  padding: 40px 15px;
+  text-align: center;
+}
+.footer-inner {
+  width: 100%;
+}
+.footer-content > div{
+  float: none;
+  width: 100%;
+}
+.policy {
+  margin: 10px 0;
+}
+.policy-sns > div {
+  float: none;
+}
+
+}

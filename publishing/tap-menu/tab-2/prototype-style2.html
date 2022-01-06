@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Section Testimonial</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="prototype-style2.css">
+</head>
+<body>
+  <section>
+    <div class="heading">
+      <div class="heading">
+        <h1> <span>publishing</span></h1>
+        <input type="text" placeholder="What are you looking for?">
+      </div>
+      <div class="tab-inner">
+        <ul class="btn">
+          <li data-alt="tab1" class="active">HTML5</li>
+          <li data-alt="tab2">CSS3</li>
+          <li data-alt="tab3">JQUERY</li>
+          <li data-alt="tab4">JAVASCRIPT</li>
+          <li data-alt="tab5">CSS FRAMEWORKS</li>
+        </ul>
+        <div class="tabs">
+          <div id="tab1" class="active">
+            <h2>HTML5</h2>
+            <img src="images/prototype/platform-logo-01.png">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis nulla nam excepturi voluptates accusamus! Obcaecati minima odit voluptate necessitatibus quas facere aperiam sint perspiciatis ratione vel. Accusantium aspernatur ratione eligendi magni laborum maxime eum in adipisci iusto quaerat explicabo alias, nesciunt repudiandae hic, minus animi quam ullam pariatur quo iste voluptatum aliquam veniam. Sed libero explicabo beatae harum corporis ut quae, temporibus. Quam dolores impedit aliquid dicta, saepe facere ex.
+            </p>
+          </div>
+          <div id="tab2">
+            <h2>CSS</h2>
+            <img src="images/prototype/platform-logo-02.png">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores officia odio asperiores ipsam magnam, alias itaque vero cum iusto, voluptate doloribus quasi recusandae est possimus quod saepe nemo, perferendis quae. Ex commodi minus, molestias laudantium reiciendis nobis unde eaque officiis in molestiae. Rem atque labore ullam reiciendis voluptatem facere sapiente, cumque deleniti dolores quod assumenda facilis repellendus, odit sed corporis sequi adipisci totam, temporibus dignissimos. Quos nostrum assumenda earum, ratione.
+            </p>
+          </div>
+          <div id="tab3">
+            <h2>JQUERY</h2>
+            <img src="images/prototype/platform-logo-03.png">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus atque quas magnam, possimus repellendus reiciendis dicta, perferendis aliquid ut eveniet minus consequuntur tempora. Reiciendis quo quasi voluptatibus nisi quia ipsam iure cupiditate cumque, eligendi veniam nobis, nulla accusantium odio rerum saepe esse omnis, laboriosam accusamus. Nulla labore ullam quia veniam aspernatur, quaerat et accusamus. Exercitationem quibusdam, commodi amet ullam laboriosam repudiandae dolore facere deserunt cupiditate cumque, consequatur qui ratione reiciendis?
+            </p>
+          </div>
+          <div id="tab4">
+            <h2>JAVASCRIPT</h2>
+            <img src="images/prototype/platform-logo-04.png">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut officiis facere reiciendis, quasi accusamus cum nobis sint asperiores, tenetur perferendis eius tempora sit laudantium a. Nesciunt accusamus, non, incidunt culpa hic ipsam dolore. Dicta quam reiciendis voluptatibus sequi eos atque minima provident aliquam quas, omnis dolorum, iusto doloribus tempore explicabo modi voluptates accusamus. Et, eligendi. Velit expedita, libero nam mollitia commodi inventore ipsam maiores sapiente optio voluptatum, obcaecati tempora!
+            </p>
+          </div>
+          <div id="tab5">
+            <h2>CSS FRAMEWORKS</h2>
+            <img src="images/prototype/platform-logo-05.png">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In saepe sapiente, optio iusto enim placeat unde magnam laudantium doloremque repellendus molestias nemo sed ad, deserunt recusandae pariatur et atque voluptas! Alias aspernatur, enim ut nam. Eum explicabo facilis ratione fuga nostrum veritatis, cumque veniam odio minima ullam! Voluptas labore numquam ullam ab qui doloremque, modi harum, consequatur rerum magnam accusamus quis error quidem, omnis suscipit vel laboriosam necessitatibus eius eum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.btn li').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+      var result =$(this).attr('data-alt')
+      $('.tabs div').removeClass('active')
+      $('#' + result).addClass('active')
+    })
+  </script>
+</body>
+</html>
